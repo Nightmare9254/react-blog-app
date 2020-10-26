@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <h1>Bedzie dzialac na pefno</h1>
+    <h1>Bedzie dzialac na pewno</h1>
   );
 }
 
