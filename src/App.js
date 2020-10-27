@@ -16,8 +16,6 @@ import Albums from './components/Albums';
 function App() {
 
   return(
-    <>
-    <Main/>
     <Router>
       <Link to="/posts">see</Link>
       <Switch>
@@ -26,11 +24,11 @@ function App() {
         <Route exact path='/albums' component={Albums}/>
         <Route exact path='/posts' component={Posts}/>
         <Route exact path="/search-users" component={SerchUser}/>
-        <Route path='/' component={Main}/>
+        <Route exact path="https://nightmare9254.github.io/testowa/" component={Main}/>
+        <Route exact path='/' component={Main}/>
 
       </Switch>
     </Router>
-</>
   );
 }
 
