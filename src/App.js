@@ -24,7 +24,7 @@ function App() {
         <Route exact path='/albums' component={Albums}/>
         <Route exact path='/posts' component={Posts}/>
         <Route exact path="/search-users" component={SerchUser}/>
-        <Route exact path='/' component={Main}/>
+        <Route path='/' component={Main}/>
 
       </Switch>
     </Router>
