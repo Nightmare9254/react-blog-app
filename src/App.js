@@ -17,7 +17,6 @@ function App() {
 
   return(
     <Router>
-      <Link to="/posts">see</Link>
       <Switch>
         <Route exact path='/posts/:id' component={SinglePost}/>
         <Route exact path='/albums/:id' component={Photos}/>
@@ -26,7 +25,6 @@ function App() {
         <Route exact path="/search-users" component={SerchUser}/>
         <Route exact path="/testowa" component={Main}/>
         <Route exact path='/' component={Main}/>
-
       </Switch>
     </Router>
   );
