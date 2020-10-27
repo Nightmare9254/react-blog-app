@@ -16,6 +16,8 @@ import Albums from './components/Albums';
 function App() {
 
   return(
+    <>
+    <Main/>
     <Router>
       <Link to="/posts">see</Link>
       <Switch>
@@ -28,7 +30,7 @@ function App() {
 
       </Switch>
     </Router>
-
+</>
   );
 }
 
