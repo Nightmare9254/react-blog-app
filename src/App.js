@@ -17,6 +17,7 @@ function App() {
 
   return(
     <Router>
+      <Link to="/posts">see</Link>
       <Switch>
         <Route exact path='/posts/:id' component={SinglePost}/>
         <Route exact path='/albums/:id' component={Photos}/>

@@ -15,7 +15,7 @@ function User({userId}){
 
     return(
         <div className="user">
-            {users.map(user => <p>Created by: {user.name}</p>)}
+            {users.map(user => <p className="user-name">Created by: <br/><span className="user-name-span">{user.name}</span></p>)}
             <img src={imgTab[userId]} className="user-img"></img>
         </div>
     )

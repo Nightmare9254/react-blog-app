@@ -27,9 +27,8 @@ function Albums(){
 
 
     return(
-        <div>
-
-            <Link to="/" className="post-link">Main Page</Link>
+        <div className="albums-wrapper">
+            <Link to="/" className="album-link">Main Page</Link>
             <h1>Albums</h1>
             {albums.map(album => <Album key={album.id} userId={album.userId} id={album.id} title={album.title}/> )}
         </div>

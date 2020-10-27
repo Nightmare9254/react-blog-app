@@ -5,7 +5,7 @@
 }
 
 body{
-  background: #A5AAAB;
+  background: #262627;
   color: #fff;
 }
 
@@ -13,114 +13,150 @@ body{
   height: 100vh;
   display: flex;
   flex-flow: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  font-size: 24px;
-  letter-spacing: 5px;
 }
 
 .main-link{
   text-decoration: none;
   padding: 10px;
   color: rgb(255, 255, 255);
-  margin: 20px;
-  font-weight: 500;
-  font-size: 24px;
-  border: 1px solid black;
-  border-radius: 100px;
-  background: #000;
+  font-weight: 300;
+  font-size: 2.4rem;
 }
 
-.user-img{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 30%;
+.main-link:hover{
+  text-decoration: underline;
 }
 
-.post{
-  margin: 20px 10px ;
-}
-
-.post p{
-  padding: 10px 0;
-}
-
-.post-title{
-  font-size: 20px;
-  margin: 0 0 10px 15px;
-}
-
-.user{
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 10px 30px 10px;
-  align-items: center;
-}
-
-.post-link{
+.link{
   text-decoration: none;
-  margin: 15px 20px 20px 0;
-  display: inline-block;
-  padding: 10px;
-  color: #fff;
-  border: 1px solid black;
-  border-radius: 100px;
-  display: inline-block;
   text-align: center;
-}
-.single-post-title{
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.searchuser-wrapper{
-  display: flex;
-  width: 100vw;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.search-input{
-  padding: 10px;
-  font-size: 20px;
-  border-radius: 100px 0 0 100px;
-  border: none;
-}
-
-.search-button{
-  margin-left: 10px;
-  padding: 0 20px;
-  background: rgb(218, 63, 63);
+  font-size: 1.3rem;
+  background: #A99989;
   color: #fff;
-  font-weight: 700;
-  letter-spacing: 5px;
-  border: none;
-  border-radius: 0 100px 100px 0;
+  padding: 10px;
+  width: 8rem;
+  margin-bottom: 1rem;
+  border-radius: 0.2rem;
 }
 
-.user-info-wrapper{
-  margin: 100px 0;
-  text-align: center;
-
-}
-
-.user-info-wrapper img {
-  margin-top: 50px;
-}
-
-.user-info-img{
-  width: 200px;
-}
-
-.album-title{
-  width: 80vw;
+.posts-main{
+  width: 90vw;
   margin: 0 auto;
 }
 
-.album-header{
+.single-post{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  margin: 1.2rem 0;
+}
+
+.user{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.user-name{
+  font-size: 1.8rem;
+}
+
+.user-name-span{
+  font-weight: 700;
+  color: #FBA51A;
+}
+
+.user-img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100px;
+  margin: 0 0.5rem;
+}
+
+.single-post-wrapper{
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.single-post-title{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.single-post-body{
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.search-user-wrapper{
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.search-user-bar{
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 2rem 0 3rem 0;
+}
+
+.search-input{
+  width: 80%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius:  100px 0 0 100px;
+  border: none;
+  color: rgb(19, 16, 16);
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+}
+
+.search-button{
+  width: 20%;
+  border-radius: 0 100px 100px 0;
+  border: none;
+  background: rgb(218, 63, 63);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.user-info{
+  font-size: 1.7rem;
+  font-weight: 600;
   text-align: center;
-  font-size: 16px;
-  padding: 10px;
-  margin: 10px 0;
+}
+
+.user-info-span{
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.user-info-img{
+  margin:2rem 0 3rem 0;
+  width: 100%;
+}
+
+.user-info p{
+  margin-bottom: 1rem;
+}
+
+.albums-wrapper{
+  width: 90vw;
+}
+
+.album-header{
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+.album-title hr{
+  margin-top: 3rem;
 }

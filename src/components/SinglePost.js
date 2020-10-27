@@ -18,11 +18,11 @@ function SinglePost(){
             .then(json => setSinglePost(json))
     })
     return(
-        <div className="post">
+        <div className="single-post-wrapper">
             <User userId={singlePost.userId}/>
             <p className="single-post-title">{singlePost.title}</p>
-            <p>{singlePost.body}</p>
-            <Link to="/"  className="post-link">Go back</Link>
+            <p className="single-post-body">{singlePost.body}</p>
+            <Link to="/"  className="link">Go back</Link>
         </div>
     );
 }

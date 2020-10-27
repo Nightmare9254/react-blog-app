@@ -10,7 +10,7 @@ function Album({title,userId,id}){
         <div className="album-title">
             <h2 className="album-header">{title}</h2>
             <User userId={userId}/>
-            <Link to={`/albums/${id}`}>See Photos</Link>
+            <Link to={`/albums/${id}`} className="link">See Photos</Link>
             <hr/>
         </div>
     )
