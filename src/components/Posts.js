@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { roll } from '../Random';
 import Post from "./Post";
+import AnimationBlocks from './AnimationBlocks';
 
 
   function Posts() {
 
     const [posts,setPosts] = useState([]);
     const [users,setUsers] = useState([]);
+    const [loadPost,setLoadPost] = useState(false);
     const prePosts = [];
     //1. While dopoki dlugosc tablicy randomowych liczb nie jest 100
     //2. robisz funckje getRadom()
@@ -27,6 +30,7 @@ import Post from "./Post";
               prePosts.push(json);
               if(prePosts.length === 100){
                 setPosts(prePosts);
+                setLoadPost(true);
               }
             })
             //.then(json => console.log(json));
@@ -36,7 +40,9 @@ import Post from "./Post";
 
     return (
       <div className="posts-main">
-           {posts.map(post => <Post user={users.id} key={post.id} userId={post.userId} id={post.id} title={post.title} body={post.body}/>)}
+          {!loadPost && <AnimationBlocks/>}
+          {loadPost &&  <Link to="/" className="link-to-main"><i class="fas fa-arrow-left fa-2x"></i></Link>}
+          {loadPost && posts.map(post => <Post user={users.id} key={post.id} userId={post.userId} id={post.id} title={post.title} body={post.body}/>)}
       </div>
     );
   }

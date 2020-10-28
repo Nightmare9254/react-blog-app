@@ -22,7 +22,7 @@ function SinglePost(){
             <User userId={singlePost.userId}/>
             <p className="single-post-title">{singlePost.title}</p>
             <p className="single-post-body">{singlePost.body}</p>
-            <Link to="/"  className="link">Go back</Link>
+            <Link to="/posts"  className="link">Go back</Link>
         </div>
     );
 }

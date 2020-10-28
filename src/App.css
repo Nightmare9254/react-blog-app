@@ -7,6 +7,19 @@
 body{
   background: #262627;
   color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+@keyframes load{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-100px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 
 .main-header{
@@ -29,21 +42,28 @@ body{
   text-decoration: underline;
 }
 
-.link{
+.link,.link-to-main{
   text-decoration: none;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   background: #A99989;
   color: #fff;
-  padding: 10px;
+  padding: 9px;
   width: 8rem;
   margin-bottom: 1rem;
   border-radius: 0.2rem;
+  position: relative;
+}
+
+.link-to-main svg{
+  transform: translateY(7px);
 }
 
 .posts-main{
   width: 90vw;
+  height: 100vh;
   margin: 0 auto;
+  position: relative;
 }
 
 .single-post{
@@ -69,6 +89,7 @@ body{
 
 .user-name-span{
   font-weight: 700;
+  font-size: 1.4rem;
   color: #FBA51A;
 }
 
@@ -85,7 +106,7 @@ body{
 }
 
 .single-post-title{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -112,7 +133,7 @@ body{
   border-radius:  100px 0 0 100px;
   border: none;
   color: rgb(19, 16, 16);
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.05rem;
 }
 
@@ -123,12 +144,12 @@ body{
   background: rgb(218, 63, 63);
   color: #fff;
   font-size: 1.2rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .user-info{
   font-size: 1.7rem;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -159,4 +180,76 @@ body{
 
 .album-title hr{
   margin-top: 3rem;
+}
+
+.albums-header{
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.photos-wrapper{
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.photos-album-title{
+  margin: 2rem 0;
+}
+
+.single-photo-span{
+  font-weight: 300;
+}
+
+.single-photo-img{
+    width: 100%;
+    margin: 0.5rem 0 2.5rem 0;
+}
+
+.single-photo-title{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.load-ani1{
+  position: absolute;
+  background: #fff;
+  border-radius: 100px;
+  margin-left: 20px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  left: 30%;
+  animation: load ease-in-out infinite 1s;
+}
+.load-ani2{
+  position: absolute;
+  background: #fff;
+  border-radius: 100px;
+  margin-left: 20px;
+  top: 50%;
+  width: 25px;
+  height: 25px;
+  left: 40%;
+  animation: load ease-in-out infinite 1s;
+  animation-delay: 0.2s;
+}
+.load-ani3{
+  position: absolute;
+  background: #fff;
+  border-radius: 100px;
+  margin-left: 20px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation: load ease-in-out infinite 1s;
+  animation-delay: 0.4s;
+}
+
+.ani-header{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  font-size: 1.4rem;
+  font-weight: 300;
 }
