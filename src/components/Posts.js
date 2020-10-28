@@ -23,7 +23,7 @@ import AnimationBlocks from './AnimationBlocks';
 
 
      useEffect(() =>{
-           for(let i = 0; i <= 100; i++){
+           for(let i = 0; i <= 99; i++){
             fetch(`https://jsonplaceholder.typicode.com/posts/${rngTab[i]}`)
             .then(res => res.json())
             .then(json => {
