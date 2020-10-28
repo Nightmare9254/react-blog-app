@@ -30,10 +30,11 @@ function Albums(){
 
 
     return(
+
         <div className="albums-wrapper">
             {!loadAlbum && <AnimationBlocks/>}
-            {loadAlbum && <Link to="/" className="link-to-main"><i class="fas fa-arrow-left fa-2x"></i></Link>}
-            {loadAlbum && <h1 className="albums-header">Albums</h1>}
+             <Link to="/" className="link-to-main"><i class="fas fa-arrow-left fa-2x"></i></Link>
+            <h1 className="albums-header">Albums</h1>
             {loadAlbum && albums.map(album => <Album key={album.id} userId={album.userId} id={album.id} title={album.title}/>)}
         </div>
     )

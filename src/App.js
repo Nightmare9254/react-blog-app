@@ -32,10 +32,6 @@ function App() {
 
 export default App;
 
-//1. Oblusga bledu przy searchUser
-//2. Animacje ladowania tresci
-//3. Poprawa sekcji zdjec
-//4. Mniejszy font na mobile
-//5. Funkcja na enter zeby dzialo na strzalke (enter albo strzalka)
-//6. Margin po wyszukaniu usera na button
-//7. Margin-top na postach i albumach
+
+//1. GLowna strona jakies hero naglowek > sekcja z postami ale tylko np 4 posty i jak ktos klinie all posts to go przeniesie do wszystkich postow
+//2.
