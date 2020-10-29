@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import Post from './Post';
 import {useParams, Link} from 'react-router-dom';
 import User from './User';
+import AnimationBlocks from './AnimationBlocks';
 
 
-function SinglePost(){
+function SinglePost(d){
 
     const {id} = useParams();
     const [singlePost,setSinglePost] = useState({});
+    const [loadPost,setLoadPost] = useState(false);
 
 
 
@@ -15,14 +16,18 @@ function SinglePost(){
     useEffect(() => {
         fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
             .then(res => res.json())
-            .then(json => setSinglePost(json))
+            .then(json => {
+                setSinglePost(json)
+                setLoadPost(true);
+            })
     })
     return(
         <div className="single-post-wrapper">
-            <User userId={singlePost.userId}/>
+            {!loadPost && <AnimationBlocks/>}
+            {loadPost &&  <User userId={singlePost.userId}/>}
             <p className="single-post-title">{singlePost.title}</p>
             <p className="single-post-body">{singlePost.body}</p>
-            <Link to="/posts"  className="link">Go back</Link>
+            {loadPost &&  <Link to="/posts"  className="link">Go back</Link>}
         </div>
     );
 }

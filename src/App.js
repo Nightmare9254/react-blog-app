@@ -34,4 +34,5 @@ export default App;
 
 
 //1. GLowna strona jakies hero naglowek > sekcja z postami ale tylko np 4 posty i jak ktos klinie all posts to go przeniesie do wszystkich postow
-//2.
+//2. Wystylizuj tego errora
+//3. Animacja ladowania na zdjecia i pojedynczego posta

@@ -41,7 +41,7 @@ import AnimationBlocks from './AnimationBlocks';
     return (
       <div className="posts-main">
           {!loadPost && <AnimationBlocks/>}
-          {loadPost &&  <Link to="/" className="link-to-main"><i class="fas fa-arrow-left fa-2x"></i></Link>}
+          {loadPost &&  <Link to="/" className="link-to-main"><i className="fas fa-arrow-left fa-2x"></i></Link>}
           {loadPost && posts.map(post => <Post user={users.id} key={post.id} userId={post.userId} id={post.id} title={post.title} body={post.body}/>)}
       </div>
     );

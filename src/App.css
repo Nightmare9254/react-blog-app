@@ -44,25 +44,22 @@ body{
 
 .link,.link-to-main{
   text-decoration: none;
+  position: relative;
   text-align: center;
   font-size: 1.2rem;
   background: #A99989;
   color: #fff;
-  padding: 9px;
+  padding: 12px;
   width: 8rem;
   margin-bottom: 1rem;
   border-radius: 0.2rem;
   position: relative;
 }
 
-.link-to-main svg{
-  transform: translateY(7px);
-}
-
 .posts-main{
   width: 90vw;
   height: 100vh;
-  margin: 0 auto;
+  margin: 1rem auto;
   position: relative;
 }
 
@@ -117,7 +114,7 @@ body{
 
 .search-user-wrapper{
   width: 90vw;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .search-user-bar{
@@ -163,13 +160,13 @@ body{
   margin:2rem 0 3rem 0;
   width: 100%;
 }
-
 .user-info p{
   margin-bottom: 1rem;
 }
 
 .albums-wrapper{
   width: 90vw;
+  margin: 0 auto;
 }
 
 .album-header{
@@ -257,7 +254,8 @@ body{
   background: red;
   width: 5vw;
 }
-.fa-bars,.fa-chevron-left {
+
+.fa-bars,.fa-chevron-right {
   font-size: 50px;
   position: absolute;
   right: 2rem;
@@ -296,4 +294,40 @@ body{
 
 .wrap{
   position: relative;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.notfound-wrapper{
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@keyframes squareRotate{
+  35%{
+
+    transform: translateY(-50px);
+  }
+  100%{
+    transform: rotateZ(90deg);
+  }
+}
+.square{
+  position: absolute;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  animation-name: squareRotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+.main-posts{
+  margin-top: 4rem;
 }
