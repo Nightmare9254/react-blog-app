@@ -19,6 +19,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path='/posts/:id' component={SinglePost}/>
+        <Route exact path="/testowa/posts:id" component={SinglePost}/>
         <Route exact path='/albums/:id' component={Photos}/>
         <Route exact path='/albums' component={Albums}/>
         <Route exact path='/posts' component={Posts}/>

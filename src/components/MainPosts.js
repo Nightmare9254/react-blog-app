@@ -21,6 +21,7 @@ function MainPosts(){
                 prePosts.push(json);
                 if(prePosts.length === 4){
                   setPosts(prePosts);
+                // console.log(prePosts)
                   setIsLoad(true);
                 }
               })

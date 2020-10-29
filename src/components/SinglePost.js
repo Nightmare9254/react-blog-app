@@ -4,7 +4,7 @@ import User from './User';
 import AnimationBlocks from './AnimationBlocks';
 
 
-function SinglePost(d){
+function SinglePost(){
 
     const {id} = useParams();
     const [singlePost,setSinglePost] = useState({});
