@@ -1,7 +1,7 @@
 import React from 'react';
 
 function AnimationBlocks(){
-        //<h6 className="ani-header">Loading...</h6>
+
     return(
         <div>
             <div className="load-ani1"></div>

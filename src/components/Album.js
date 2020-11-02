@@ -4,8 +4,6 @@ import User from './User';
 
 function Album({title,userId,id}){
 
-
-
     return(
         <div className="album-title">
             <h2 className="album-header">{title}</h2>

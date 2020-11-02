@@ -11,12 +11,6 @@ import AnimationBlocks from './AnimationBlocks';
     const [users,setUsers] = useState([]);
     const [loadPost,setLoadPost] = useState(false);
     const prePosts = [];
-    //1. While dopoki dlugosc tablicy randomowych liczb nie jest 100
-    //2. robisz funckje getRadom()
-    //3. W while robisz if() czy juz jest w tablicy jezeli nie ma takiej liczb to push else losuj kolejna
-    //4. For w fetchu do 100
-    //5. Przypisac do prePosts
-    //6. Cale preposts przypisac do setPosts
     let rngTab = [];
     roll(rngTab);
 

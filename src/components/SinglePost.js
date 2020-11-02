@@ -10,9 +10,6 @@ function SinglePost(){
     const [singlePost,setSinglePost] = useState({});
     const [loadPost,setLoadPost] = useState(false);
 
-
-
-
     useEffect(() => {
         fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
             .then(res => res.json())

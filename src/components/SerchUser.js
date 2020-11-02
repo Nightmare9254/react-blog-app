@@ -32,10 +32,10 @@ function SerchUser(){
             <div className="search-user-bar">
                 <input type="text" placeholder="Serch for a user" className="search-input" onKeyDown={add} value={value}  onChange={(e) => setValue(e.target.value)}/>
                 <button className="search-button" onClick={() => fetchUser()}
-                ><i class="fas fa-search"></i></button>
+                ><i className="fas fa-search"></i></button>
             </div>
          {!load && isSearching && <AnimationBlocks/>}
-         {isSearching && user.length === 0 && <div className="notfound-wrapper"><p className="user-not-found">User not  found</ p><div className="square"></div></div>}
+         {isSearching && user.length === 0 && <div className="notfound-wrapper"><p className="user-not-found"></ p><div className="square">User not  found</div></div>}
          {load && user.map(user => <UserInfo key={user.id} id={user.id} address={user.address} name={user.name} email={user.email} phone={user.phone}/>)}
         </div>
 

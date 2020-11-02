@@ -33,7 +33,7 @@ function Albums(){
 
         <div className="albums-wrapper">
             {!loadAlbum && <AnimationBlocks/>}
-             <Link to="/" className="link-to-main"><i class="fas fa-arrow-left fa-2x"></i></Link>
+             <Link to="/" className="link-to-main"><i className="fas fa-arrow-left fa-2x"></i></Link>
             <h1 className="albums-header">Albums</h1>
             {loadAlbum && albums.map(album => <Album key={album.id} userId={album.userId} id={album.id} title={album.title}/>)}
         </div>

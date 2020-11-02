@@ -16,6 +16,5 @@ function UserInfo({name, email, address, id}){
     )
 }
 
-// to rob jeszcze ja bd za 10 min
 
 export default UserInfo;
